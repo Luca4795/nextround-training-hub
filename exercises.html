@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore boxing, strength, cardio and recovery exercises inside NextRound Training Hub." />
+    <meta name="author" content="Luca De Filippo" />
+    <title>Exercises | NextRound Training Hub</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">NextRound</a>
+
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Exercises Library</h1>
+        <p>Explore training exercises and filter them by category to build better boxing sessions.</p>
+      </section>
+
+      <section>
+        <h2>Filter exercises</h2>
+        <label for="exercises-filter">Choose a category</label>
+        <select name="exercises-filter" id="exercises-filter">
+          <option value="all">All</option>
+          <option value="boxing">Boxing</option>
+          <option value="strength">Strength</option>
+          <option value="cardio">Cardio</option>
+          <option value="recovery">Recovery</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Available exercises</h2>
+        <div id="exercises-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 NextRound Training Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/exercises.js"></script>
+  </body>
+</html>

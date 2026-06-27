@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View and update your athlete profile inside NextRound Training Hub." />
+    <meta name="author" content="Luca De Filippo" />
+    <title>Profile | NextRound Training Hub</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">NextRound</a>
+
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Athlete Profile</h1>
+        <img src="assets/images/athlete-profile.jpg" alt="Athlete profile picture" class="section-image" />
+        <p>View and update your training profile.</p>
+      </section>
+
+      <section>
+        <h2>Current profile</h2>
+
+        <article>
+          <p id="profile-name">Name: Luca</p>
+          <p id="profile-sport">Sport: Boxing</p>
+          <p id="profile-level">Level: Amateur</p>
+          <p id="profile-goal">Goal: Improve boxing performance</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Edit profile</h2>
+
+        <form id="profile-form" novalidate>
+          <label for="name-input">Name</label>
+          <input type="text" id="name-input" name="name-input" placeholder="Example: Luca" required />
+
+          <label for="sport-input">Sport</label>
+          <input type="text" id="sport-input" name="sport-input" placeholder="Example: Boxing" required />
+
+          <label for="level-input">Level</label>
+          <select name="level-input" id="level-input" required>
+            <option value="">Select your level</option>
+            <option value="beginner">Beginner</option>
+            <option value="amateur">Amateur</option>
+            <option value="advanced">Advanced</option>
+            <option value="professional">Professional</option>
+          </select>
+
+          <label for="goal-input">Goal</label>
+          <textarea
+            name="goal-input"
+            id="goal-input"
+            rows="4"
+            placeholder="Example: Improve boxing performance and build better conditioning"
+            required
+          ></textarea>
+
+          <button type="submit">Update profile</button>
+          <p id="profile-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 NextRound Training Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>

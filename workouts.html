@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Create, manage and track boxing workouts inside NextRound Training Hub" />
+    <meta name="author" content="Luca De Filippo" />
+    <title>Workouts | NextRound Training Hub</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">NextRound</a>
+
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Workouts</h1>
+        <img src="assets/images/workouts-training.jpg" alt="Boxing training session" class="section-image" />
+        <p>Create and manage your training sessions.</p>
+      </section>
+
+      <section>
+        <h2>Add a new workout</h2>
+
+        <form id="workout-form" novalidate>
+          <label for="workout-title">Workout title</label>
+          <input type="text" id="workout-title" name="workout-title" placeholder="Example: Heavy Bag Session" required />
+
+          <label for="workout-category">Category</label>
+          <select name="workout-category" id="workout-category" required>
+            <option value="">Select a category</option>
+            <option value="boxing">Boxing</option>
+            <option value="strength">Strength</option>
+            <option value="cardio">Cardio</option>
+            <option value="recovery">Recovery</option>
+          </select>
+
+          <label for="workout-duration">Duration in minutes</label>
+          <input type="number" id="workout-duration" name="workout-duration" placeholder="Example: 45" min="1" required />
+
+          <label for="workout-intensity">Intensity</label>
+          <select name="workout-intensity" id="workout-intensity" required>
+            <option value="">Select intensity</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <label for="workout-notes">Notes</label>
+          <textarea name="workout-notes" id="workout-notes" rows="4" placeholder="Add technical focus, combinations or personal notes"></textarea>
+
+          <button type="submit">Add workout</button>
+          <p id="workout-message" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Your workouts</h2>
+
+        <label for="workout-filter">Filter by category</label>
+
+        <select name="workout-filter" id="workout-filter">
+          <option value="all">All</option>
+          <option value="boxing">Boxing</option>
+          <option value="strength">Strength</option>
+          <option value="cardio">Cardio</option>
+          <option value="recovery">Recovery</option>
+        </select>
+
+        <div id="workouts-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 NextRound Training Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/workouts.js"></script>
+  </body>
+</html>

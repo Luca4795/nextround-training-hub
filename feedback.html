@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Send feedback about your experience with NextRound Training Hub." />
+    <meta name="author" content="Luca De Filippo" />
+    <title>Feedback | NextRound Training Hub</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">NextRound</a>
+
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Feedback</h1>
+        <p>Share your thoughts and help improve the training experience.</p>
+      </section>
+
+      <section>
+        <h2>Send your feedback</h2>
+
+        <form id="feedback-form" novalidate>
+          <label for="feedback-name">Name</label>
+          <input type="text" id="feedback-name" name="feedback-name" placeholder="Example: Luca" required />
+
+          <label for="feedback-email">Email</label>
+          <input type="email" id="feedback-email" name="feedback-email" placeholder="Example: luca@email.com" required />
+
+          <label for="feedback-message-input">Message</label>
+          <textarea name="feedback-message-input" id="feedback-message-input" rows="4" placeholder="Write your feedback here..." required></textarea>
+
+          <button type="submit">Send feedback</button>
+          <p id="feedback-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 NextRound Training Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/feedback.js"></script>
+  </body>
+</html>

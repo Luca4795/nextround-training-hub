@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NextRound Training Hub dashboard for boxing athletes to manage workouts, exercises and training progress." />
+    <meta name="author" content="Luca De Filippo" />
+    <title>Dashboard | NextRound Training Hub</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">NextRound</a>
+
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div>
+          <p class="eyebrow">NextRound Training Hub</p>
+
+          <h1>Train smarter. Track better. Improve every round.</h1>
+          <p id="welcome-message">Checking login status...</p>
+
+          <div class="hero-actions">
+            <a href="login.html" id="login-link" class="button-link">Log in</a>
+            <button id="logout-button" type="button">Logout</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Your Training Hub</h2>
+
+        <div>
+          <article>
+            <h3>Workouts</h3>
+            <p>Create and manage your training sessions.</p>
+            <a href="workouts.html">Go to workouts</a>
+          </article>
+
+          <article>
+            <h3>Exercises</h3>
+            <p>Explore boxing, strength, cardio and recovery exercises.</p>
+            <a href="exercises.html">View exercises</a>
+          </article>
+
+          <article>
+            <h3>Profile</h3>
+            <p>Update your athlete profile and training information.</p>
+            <a href="profile.html">Edit profile</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Daily training quote</h2>
+        <p id="quote-text">Click the button to load a quote.</p>
+        <p id="quote-author"></p>
+        <button id="quote-button" type="button">Load quote</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 NextRound Training Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
